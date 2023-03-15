@@ -1,0 +1,54 @@
+:root {
+    --bg: #BCC0CC;
+    --fg: #4C4F69;
+    --surface1: #EFF1F5;
+    --green: #40A02B;
+    --blue: #1E66F5;
+    --yellow: #DF8E1D;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #24273A;
+        --fg: #CAD3F5;
+        --surface1: #494D64;
+        --green: #A6DA95;
+        --blue: #8AADF4;
+        --yellow: #EED49F;
+    }
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 0;
+    color: var(--fg);
+    background-color: var(--bg);
+}
+
+pre#game {
+    letter-spacing: 4px;
+    margin: 1rem;
+    font-family: monospace;
+    background-color: var(--surface1);
+}
+
+pre#messages {
+    font-family: serif;
+}
+
+.green {
+    color: var(--green);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.yellow {
+    color: var(--yellow);
+}
